@@ -12,9 +12,13 @@ public class main {
 	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		int numberOfOrderedItems = 0 ;
+		
+		System.out.println("Enter number of orders: ");
+        numberOfOrderedItems = scanner.nextInt();
         
         //declaring variables
-        int numberOfOrderedItems = 10 ;
+        
         String itemNames[] = new String[numberOfOrderedItems];
         int itemsnumber[] = new int[numberOfOrderedItems];
         double quantity[] = new double[numberOfOrderedItems];
@@ -28,8 +32,7 @@ public class main {
         //Taking user input
         System.out.println("Sales Records");
         System.out.println("==================");
-        System.out.println("Enter number of orders: ");
-        numberOfOrderedItems = scanner.nextInt();
+        
         
         for(int i = 0; i < numberOfOrderedItems; i++){
             //item number
