@@ -70,6 +70,7 @@ public class main {
             System.out.println("Date: "+d.toLocalDate());
         }
         
+        //------------------------------------------------------------------------------
         //Getting totals
         double tquantity,tamountpaid, tamountDue, tbalance;
         
@@ -80,7 +81,7 @@ public class main {
             tamountDue += AmountDue[i]; //Gets the total Amount Due
             tbalance += Balance[i]; //Gets the total balance
         }
-        
+      //--------------------------------------------------------------------------------  
         
         System.out.println("\t\t\t\tSales reciet");
         System.out.println("\t\t\t=======================");
@@ -91,8 +92,10 @@ public class main {
            
            System.out.println( itemsnumber[i]+"\t \t "+itemNames[i]+"\t \t "+quantity[i]+"\t \t "+price[i]+"\t \t "+AmountPaid[i]+"\t \t \t \t" +AmountDue[i]+"\t \t\t"+Balance[i]);
         }
+        //--------------------------------------------------------------------------------------------------------------------------------
         System.out.println("\t \t \t \t -------------------------------------------------------------------------------------------------");
         System.out.println("\t \t \t \t "+ tquantity +"\t \t \t\t "+ tamountpaid+ "\t\t\t\t"+ tamountDue+"\t\t\t"+tbalance);
+        //--------------------------------------------------------------------------------------------------------------------------------
         System.out.println("\n");
         System.out.println("Sign: __________________________________");
         
