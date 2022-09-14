@@ -3,6 +3,7 @@
  */
 package asgmnt;
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.*;
 /**
  * @author Abdi
@@ -19,7 +20,7 @@ public class main {
         numberOfOrderedItems = scanner.nextInt();
         
         //declaring variables
-        
+        LocalDateTime d = LocalDateTime.now();
         String itemNames[] = new String[numberOfOrderedItems];
         int itemsnumber[] = new int[numberOfOrderedItems];
         double quantity[] = new double[numberOfOrderedItems];
@@ -66,7 +67,7 @@ public class main {
             Balance[i] = scanner.nextDouble();
             
             //Date
-            System.out.println("Date: "+Instant.now());
+            System.out.println("Date: "+d.toLocalDate());
         }
         
         //Getting totals
